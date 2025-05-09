@@ -1,73 +1,46 @@
-# Welcome to your Lovable project
+Trip Booking Platform
+Overview
+This project, Trip Booking Platform, is a web application designed to streamline booking experiences for travelers. It leverages modern web technologies for a seamless and responsive user interface.
 
-## Project info
+Key Features
+Search and Explore Trips: Users can search for trips and view detailed information.
+Booking Management: An easy-to-use booking form for trip reservations.
+Responsive Design: Optimized for desktop and mobile views.
+Custom Theme Toggle: Users can switch between light and dark themes.
+Tech Stack
+The platform is built with:
 
-**URL**: https://lovable.dev/projects/bf44be24-0e5c-4581-b162-00c5aa9296f8
+Vite: For fast and optimized development.
+TypeScript: Ensuring type safety and cleaner code.
+React: For building dynamic and reusable UI components.
+shadcn-ui: A lightweight and customizable UI framework.
+Tailwind CSS: For modern, utility-first styling.
+Setup Instructions
+Follow these steps to set up the project locally:
 
-## How can I edit this code?
+Clone the repository:
 
-There are several ways of editing your application.
+bash
+git clone <REPO_URL>
+cd trip_booking_platform
+Install dependencies: Make sure you have Node.js and npm installed. Then run:
 
-**Use Lovable**
+bash
+npm install
+Start the Development Server:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf44be24-0e5c-4581-b162-00c5aa9296f8) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
 npm run dev
-```
+The application will be available at http://localhost:3000.
 
-**Edit a file directly in GitHub**
+Deployment
+You can deploy the project with Lovable by visiting the Lovable Project and publishing the project.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To set up a custom domain, navigate to Project > Settings > Domains and follow the steps outlined here.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bf44be24-0e5c-4581-b162-00c5aa9296f8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Rationale for Design Choices
+Component-Based Architecture: The application is structured into reusable components like Sidebar, Navbar, BookingForm, etc., improving maintainability and scalability.
+React Query: Used for data fetching and caching, ensuring better performance and a smoother user experience.
+Theme Management: Includes a ThemeProvider to offer light and dark modes, stored in localStorage for persistent preferences.
+Tailwind CSS: Chosen for its utility-first approach, enabling rapid and consistent styling throughout the application.
+Form Validation: Powered by react-hook-form and zod, ensuring accurate and user-friendly form interactions.
